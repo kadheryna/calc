@@ -1,0 +1,66 @@
+button {
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+}
+
+.box__buttons {
+	background: $calcBackground;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: stretch;
+	align-items: center;
+	border-radius: 8px;
+	grid-gap: 20px;
+	padding: 30px 35px;
+	width: 420px;
+	height: 400px;
+
+	.clear,
+	.all__clear {
+		color: $signs;
+		background: $darkBackground;
+		font-family: "League Spartan", sans-serif;
+		border-bottom: 2px solid $darkShadow;
+		font-size: 30px;
+		height: 55px;
+	}
+
+	.number,
+	.addition__operator,
+	.subtraction__operator,
+	.division__operator,
+	.multiplication__operator,
+	.decimal {
+		background: $lightBackground;
+		color: $nums;
+		font-family: "League Spartan", sans-serif;
+		border-bottom: 2px solid $lightShadow;
+		font-size: 35px;
+		height: 55px;
+	}
+
+	.equal__sign {
+		background: $toggleBackground;
+		color: $signs;
+		font-family: "League Spartan", sans-serif;
+		border-bottom: 2px solid $toggleShadow;
+		font-size: 30px;
+		height: 50px;
+	}
+
+	.calculator__screen {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+
+	.clear {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.equal__sign {
+		grid-column-start: 3;
+		grid-column-end: 5;
+	}
+}
