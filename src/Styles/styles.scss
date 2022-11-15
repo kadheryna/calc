@@ -1,8 +1,10 @@
 @import "colors.scss";
 @import "buttons.scss";
+@import "header.scss";
+@import "calculator.scss";
 
 body {
-	background: $bodyBackground;
+	background: $firstBackground;
 	font-family: "League Spartan", sans-serif;
 
 	h1 {
@@ -16,73 +18,5 @@ body {
 		margin: 0;
 		font-size: 13px;
 		color: $signs;
-	}
-}
-
-.box__theme {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-	margin-bottom: 25px;
-
-	.toggle {
-		display: flex;
-		align-items: flex-end;
-		gap: 15px;
-	}
-
-	.toggle__preference {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		.preference {
-			display: flex;
-			justify-content: space-evenly;
-			gap: 15px;
-			padding-bottom: 10px;
-		}
-
-		.active {
-			cursor: pointer;
-			display: flex;
-			align-items: center;
-			background: $screenBackground;
-			width: 60px;
-			height: 20px;
-			border-radius: 15px;
-		}
-	}
-}
-.calc__box {
-	background: $bodyBackground;
-	display: flex;
-	justify-content: center;
-	align-content: space-between;
-	flex-direction: column;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	.box__screen {
-		background: $screenBackground;
-		align-items: center;
-		display: flex;
-		height: 100px;
-		border: none;
-		border-radius: 5px;
-		margin-bottom: 25px;
-
-		.calculator__screen {
-			text-align: right;
-			background: none;
-			border: none;
-			width: 450px;
-			font-size: 30px;
-			color: $signs;
-		}
 	}
 }

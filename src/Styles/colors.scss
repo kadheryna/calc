@@ -1,6 +1,8 @@
+// FIRST THEME
+
 // Backgrounds
 
-$bodyBackground: hsl(222, 26%, 31%);
+$firstBackground: hsl(222, 26%, 31%);
 $calcBackground: hsl(223, 31%, 20%);
 $screenBackground: hsl(224, 36%, 15%);
 
@@ -8,14 +10,63 @@ $screenBackground: hsl(224, 36%, 15%);
 
 $darkBackground: hsl(225, 21%, 49%);
 $darkShadow: hsl(224, 28%, 35%);
+$darkActive: hsl(224, 28%, 55%);
 
 $toggleBackground: hsl(6, 63%, 50%);
 $toggleShadow: hsl(6, 70%, 34%);
+$toggleActive: hsl(6, 63%, 65%);
 
 $lightBackground: hsl(30, 25%, 89%);
 $lightShadow: hsl(28, 16%, 65%);
+$lightActive: hsl(30, 25%, 99%);
 
 // Text
 
 $nums: hsl(221, 14%, 31%);
 $signs: hsl(0, 0%, 100%);
+
+// SECOND THEME
+// Backgrounds
+
+$secondBackground: hsl(0, 0%, 90%);
+$secondCalcBackground: hsl(0, 5%, 81%);
+$secondScreenBackground: hsl(0, 0%, 93%);
+
+// Keys
+
+$secondDarkBackground: hsl(185, 42%, 37%);
+$secondDarkShadow: hsl(185, 58%, 25%);
+
+$secondToggleBackground: hsl(25, 98%, 40%);
+$seondToggleShadow: hsl(25, 99%, 27%);
+
+$secondLightBackground: hsl(45, 7%, 89%);
+$secondLightShadow: hsl(35, 11%, 61%);
+
+// Text
+
+$secondNums: hsl(60, 10%, 19%);
+$secondSigns: hsl(0, 0%, 100%);
+
+// THIRD THEME
+// Backgrounds
+
+$thirdBackground: hsl(268, 75%, 9%);
+$thirdCalcBackground: hsl(268, 71%, 12%);
+$thirdScreenBackground: hsl(281, 89%, 26%);
+
+// Keys
+
+$thirdDarkBackground: hsl(285, 91%, 52%);
+$thirdDarkShadow: hsl(176, 100%, 44%);
+
+$thirdToggleBackground: hsl(177, 92%, 70%);
+$thirdToggleShadow: hsl(268, 47%, 21%);
+
+$thirdLightBackground: hsl(290, 70%, 36%);
+$thirdLightShadow: hsl(198, 20%, 13%);
+
+// Text
+
+$thirdNums: hsl(52, 100%, 62%);
+$thirdSigns: hsl(0, 0%, 100%);

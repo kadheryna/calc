@@ -64,3 +64,23 @@ button {
 		grid-column-end: 5;
 	}
 }
+
+// Active
+
+.equal__sign:active {
+	background: $toggleActive;
+}
+
+.number:active,
+.addition__operator:active,
+.subtraction__operator:active,
+.division__operator:active,
+.multiplication__operator:active,
+.decimal:active {
+	background: $lightActive;
+}
+
+.clear:active,
+.all__clear:active {
+	background: $darkActive;
+}
