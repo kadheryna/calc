@@ -1,0 +1,30 @@
+.calc__box {
+	background: $firstBackground;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	.box__screen {
+		background: $screenBackground;
+		align-items: center;
+		display: flex;
+		height: 100px;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 25px;
+
+		.calculator__screen {
+			text-align: right;
+			background: none;
+			border: none;
+			width: 450px;
+			font-size: 30px;
+			color: $signs;
+		}
+	}
+}
