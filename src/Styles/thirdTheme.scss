@@ -1,0 +1,66 @@
+.three {
+	background: $thirdBackground;
+
+	.toggle {
+		.active__toggle {
+			background: $thirdCalcBackground;
+		}
+	}
+
+	.box__buttons {
+		background: $thirdCalcBackground;
+
+		.clear__all,
+		.clear {
+			color: $thirdSigns;
+			background: $thirdDarkBackground;
+			border-bottom: 3px solid $thirdLightBackground;
+		}
+
+		.number,
+		.addition__operator,
+		.subtraction__operator,
+		.division__operator,
+		.multiplication__operator,
+		.decimal {
+			background: $thirdToggleShadow;
+			color: $thirdNum;
+			border-bottom: 3px solid $thirdLightBackground;
+		}
+
+		.equal__sign {
+			background: $thirdDarkShadow;
+			color: $thirdNum;
+			border-bottom: 3px solid $thirdDarkActive;
+		}
+	}
+	.calc__box {
+		background: $thirdBackground;
+
+		.box__screen {
+			background: $thirdCalcBackground;
+
+			.calculator__screen {
+				color: $thirdNum;
+			}
+		}
+	}
+
+	.equal__sign:active {
+		background: $thirdDarkActive;
+	}
+
+	.number:active,
+	.addition__operator:active,
+	.subtraction__operator:active,
+	.division__operator:active,
+	.multiplication__operator:active,
+	.decimal:active {
+		background: $thirdLightActive;
+	}
+
+	.clear:active,
+	.clear__all:active {
+		background: $thirdToggleActive;
+	}
+}

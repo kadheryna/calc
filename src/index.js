@@ -15,6 +15,6 @@ toggleBtn.forEach(theme => {
 		if (theme.classList.contains("transparent")) {
 			theme.classList.remove("transparent");
 		}
-		body.className = currentTarget.id;
+		body.className = theme.id;
 	});
 });

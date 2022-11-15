@@ -5,7 +5,7 @@ button {
 }
 
 .box__buttons {
-	background: $calcBackground;
+	background: $firstCalcBackground;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-items: stretch;
@@ -13,15 +13,14 @@ button {
 	border-radius: 8px;
 	grid-gap: 20px;
 	padding: 30px 35px;
-	width: 420px;
-	height: 400px;
+	width: 30vw;
+	height: 50vh;
 
-	.clear,
-	.all__clear {
+	.clear__all,
+	.clear {
 		color: $signs;
-		background: $darkBackground;
-		font-family: "League Spartan", sans-serif;
-		border-bottom: 2px solid $darkShadow;
+		background: $firstDarkBackground;
+		border-bottom: 3px solid $firstDarkShadow;
 		font-size: 30px;
 		height: 55px;
 	}
@@ -32,21 +31,19 @@ button {
 	.division__operator,
 	.multiplication__operator,
 	.decimal {
-		background: $lightBackground;
-		color: $nums;
-		font-family: "League Spartan", sans-serif;
-		border-bottom: 2px solid $lightShadow;
+		background: $firstLightBackground;
+		color: $num;
+		border-bottom: 3px solid $firstLightShadow;
 		font-size: 35px;
 		height: 55px;
 	}
 
 	.equal__sign {
-		background: $toggleBackground;
+		background: $firstToggleBackground;
 		color: $signs;
-		font-family: "League Spartan", sans-serif;
-		border-bottom: 2px solid $toggleShadow;
+		border-bottom: 3px solid $firstToggleShadow;
 		font-size: 30px;
-		height: 50px;
+		height: 55px;
 	}
 
 	.calculator__screen {
@@ -54,7 +51,7 @@ button {
 		grid-column-end: 5;
 	}
 
-	.clear {
+	.clear__all {
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
@@ -68,7 +65,7 @@ button {
 // Active
 
 .equal__sign:active {
-	background: $toggleActive;
+	background: $firstToggleActive;
 }
 
 .number:active,
@@ -77,10 +74,10 @@ button {
 .division__operator:active,
 .multiplication__operator:active,
 .decimal:active {
-	background: $lightActive;
+	background: $firstLightActive;
 }
 
 .clear:active,
-.all__clear:active {
-	background: $darkActive;
+.clear__all:active {
+	background: $firstDarkActive;
 }

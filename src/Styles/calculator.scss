@@ -2,15 +2,11 @@
 	background: $firstBackground;
 	display: flex;
 	justify-content: center;
-	align-content: space-between;
+	align-content: center;
 	flex-direction: column;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 
 	.box__screen {
-		background: $screenBackground;
+		background: $firstScreenBackground;
 		align-items: center;
 		display: flex;
 		height: 100px;
@@ -18,12 +14,11 @@
 		border-radius: 5px;
 		margin-bottom: 25px;
 
-		.calculator__screen {
+		.screen__result {
 			text-align: right;
 			background: none;
 			border: none;
-			width: 450px;
-			font-size: 30px;
+			font-size: 50px;
 			color: $signs;
 		}
 	}
