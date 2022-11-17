@@ -13,6 +13,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 5vh 0;
 
 	h1 {
 		margin: 0;
@@ -28,3 +29,62 @@ body {
 	}
 }
 
+@media screen and (max-device-width: 700px) {
+	.box__buttons {
+		width: 60vw;
+		height: 40vh;
+		padding: 25px;
+		grid-gap: 0 15px;
+
+		.number,
+		.clear,
+		.addition__operator,
+		.subtraction__operator,
+		.decimal,
+		.division__operator,
+		.multiplication__operator,
+		.clear__all,
+		.equal__sign {
+			height: 40px;
+			font-size: 25px;
+		}
+	}
+	.box__theme {
+		h1 {
+			font-size: 23px;
+		}
+		h2, p {
+			font-size: 12px;
+		}
+		.active__toggle {
+			height: 10px;
+
+			.toggleButton1,
+			.toggleButton2,
+			.toggleButton3 {
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+}
+
+@media screen and (min-device-width: 1440) {
+	.box__buttons {
+		width: 30vw;
+		height: 77vh;
+		grid-gap: 0 20px;
+
+		.number,
+		.clear,
+		.addition__operator,
+		.subtraction__operator,
+		.decimal,
+		.division__operator,
+		.multiplication__operator,
+		.clear__all,
+		.equal__sign {
+			height: 80px;
+		}
+	}
+}

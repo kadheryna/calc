@@ -1,6 +1,5 @@
 .box__theme {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-end;
 	margin-bottom: 25px;
@@ -30,8 +29,9 @@
 			justify-content: space-evenly;
 			background: $firstScreenBackground;
 			width: 65px;
-			height: 23px;
+			height: 15px;
 			border-radius: 15px;
+			padding: 5px;
 		}
 		.toggleButton1 {
 			background-color: $firstToggleShadow;
