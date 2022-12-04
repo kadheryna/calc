@@ -37,16 +37,16 @@ body {
 		grid-gap: 0 15px;
 
 		.number,
-		.clear,
-		.addition__operator,
-		.subtraction__operator,
+		.delete,
+		.addition,
+		.subtraction,
 		.decimal,
-		.division__operator,
-		.multiplication__operator,
-		.clear__all,
-		.equal__sign {
-			height: 40px;
-			font-size: 25px;
+		.division,
+		.multiplication,
+		.clear,
+		.equal {
+			height: 30px;
+			font-size: 15px;
 		}
 	}
 	.box__theme {
@@ -76,14 +76,14 @@ body {
 		grid-gap: 0 20px;
 
 		.number,
-		.clear,
-		.addition__operator,
-		.subtraction__operator,
+		.delete,
+		.addition,
+		.subtraction,
 		.decimal,
-		.division__operator,
-		.multiplication__operator,
-		.clear__all,
-		.equal__sign {
+		.division,
+		.multiplication,
+		.clear,
+		.equal {
 			height: 80px;
 		}
 	}

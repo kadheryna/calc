@@ -10,27 +10,27 @@
 	.box__buttons {
 		background: $thirdCalcBackground;
 
-		.clear__all,
-		.clear {
+		.clear,
+		.delete {
 			color: $thirdSigns;
 			background: $thirdDarkBackground;
 			border-bottom: 3px solid $thirdLightBackground;
 		}
 
 		.number,
-		.addition__operator,
-		.subtraction__operator,
-		.division__operator,
-		.multiplication__operator,
+		.addition,
+		.subtraction,
+		.division,
+		.multiplication,
 		.decimal {
 			background: $thirdToggleShadow;
 			color: $thirdNum;
 			border-bottom: 3px solid $thirdLightBackground;
 		}
 
-		.equal__sign {
+		.equal {
 			background: $thirdDarkShadow;
-			color: $thirdNum;
+			color: $thirdClear;
 			border-bottom: 3px solid $thirdDarkActive;
 		}
 	}
@@ -43,24 +43,28 @@
 			.calculator__screen {
 				color: $thirdNum;
 			}
+
+			.screen__result {
+				color: $thirdNum;
+			}
 		}
 	}
 
-	.equal__sign:active {
+	.equal:active {
 		background: $thirdDarkActive;
 	}
 
 	.number:active,
-	.addition__operator:active,
-	.subtraction__operator:active,
-	.division__operator:active,
-	.multiplication__operator:active,
+	.addition:active,
+	.subtraction:active,
+	.division:active,
+	.multiplication:active,
 	.decimal:active {
 		background: $thirdLightActive;
 	}
 
-	.clear:active,
-	.clear__all:active {
+	.delete:active,
+	.clear:active {
 		background: $thirdToggleActive;
 	}
 }

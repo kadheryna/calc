@@ -7,13 +7,27 @@
 
 	.box__screen {
 		background: $firstScreenBackground;
-		align-items: center;
-		height: 15vh;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		height: 20vh;
 		border: none;
 		border-radius: 5px;
 		margin-bottom: 25px;
 
-		.screen__result {
+		.previous__result {
+			padding-right: 20px;
+			text-align: right;
+			background: none;
+			border: none;
+			font-size: 40px;
+			color: $signs;
+		}
+
+		.current__result {
+			padding-right: 20px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 			text-align: right;
 			background: none;
 			border: none;

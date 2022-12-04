@@ -16,7 +16,7 @@ button {
 	width: 30vw;
 	height: 50vh;
 
-	.clear__all,
+	.delete,
 	.clear {
 		color: $signs;
 		background: $firstDarkBackground;
@@ -26,10 +26,10 @@ button {
 	}
 
 	.number,
-	.addition__operator,
-	.subtraction__operator,
-	.division__operator,
-	.multiplication__operator,
+	.addition,
+	.subtraction,
+	.division,
+	.multiplication,
 	.decimal {
 		background: $firstLightBackground;
 		color: $num;
@@ -38,7 +38,7 @@ button {
 		height: 55px;
 	}
 
-	.equal__sign {
+	.equal {
 		background: $firstToggleBackground;
 		color: $signs;
 		border-bottom: 3px solid $firstToggleShadow;
@@ -51,12 +51,12 @@ button {
 		grid-column-end: 5;
 	}
 
-	.clear__all {
+	.clear {
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
 
-	.equal__sign {
+	.equal {
 		grid-column-start: 3;
 		grid-column-end: 5;
 	}
@@ -64,20 +64,20 @@ button {
 
 // Active
 
-.equal__sign:active {
+.equal:active {
 	background: $firstToggleActive;
 }
 
 .number:active,
-.addition__operator:active,
-.subtraction__operator:active,
-.division__operator:active,
-.multiplication__operator:active,
+.addition:active,
+.subtraction:active,
+.division:active,
+.multiplication:active,
 .decimal:active {
 	background: $firstLightActive;
 }
 
-.clear:active,
-.clear__all:active {
+.delete:active,
+.clear:active {
 	background: $firstDarkActive;
 }

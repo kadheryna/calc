@@ -10,25 +10,25 @@
 	.box__buttons {
 		background: $secondCalcBackground;
 
-		.clear__all,
-		.clear {
+		.clear,
+		.delete {
 			color: $secondSigns;
 			background: $secondDarkBackground;
 			border-bottom: 3px solid $secondDarkShadow;
 		}
 
 		.number,
-		.addition__operator,
-		.subtraction__operator,
-		.division__operator,
-		.multiplication__operator,
+		.addition,
+		.subtraction,
+		.division,
+		.multiplication,
 		.decimal {
 			background: $secondLightBackground;
 			color: $secondNum;
 			border-bottom: 3px solid $secondLightShadow;
 		}
 
-		.equal__sign {
+		.equal {
 			background: $secondToggleBackground;
 			color: $secondSigns;
 			border-bottom: 3px solid $secondToggleShadow;
@@ -43,24 +43,27 @@
 			.calculator__screen {
 				color: $secondNum;
 			}
+			.screen__result {
+				color: $secondNum;
+			}
 		}
 	}
 
-	.equal__sign:active {
+	.equal:active {
 		background: $secondToggleActive;
 	}
 
 	.number:active,
-	.addition__operator:active,
-	.subtraction__operator:active,
-	.division__operator:active,
-	.multiplication__operator:active,
+	.addition:active,
+	.subtraction:active,
+	.division:active,
+	.multiplication:active,
 	.decimal:active {
 		background: $secondSigns;
 	}
 
-	.clear:active,
-	.clear__all:active {
+	.delete:active,
+	.clear:active {
 		background: $secondDarkActive;
 	}
 }

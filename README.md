@@ -8,10 +8,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-######
-
-
-## My process
+Live solution: (https://calc-it-app.netlify.app/)
 
 ### Built with
 
