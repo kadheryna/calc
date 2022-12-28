@@ -1,11 +1,11 @@
-.calc__box {
+.calculatorBox {
 	background: $firstBackground;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
 
-	.box__screen {
+	.calculatorScreen {
 		background: $firstScreenBackground;
 		display: flex;
 		justify-content: flex-end;
@@ -15,16 +15,19 @@
 		border-radius: 5px;
 		margin-bottom: 25px;
 
-		.previous__result {
+		.previousResult {
+			padding-top: 10px;
 			padding-right: 20px;
 			text-align: right;
 			background: none;
 			border: none;
-			font-size: 40px;
 			color: $signs;
+			p {
+				font-size: 50px;
+			}
 		}
 
-		.current__result {
+		.currentResult {
 			padding-right: 20px;
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -33,6 +36,9 @@
 			border: none;
 			font-size: 50px;
 			color: $signs;
+			p {
+				font-size: 50px;
+			}
 		}
 	}
 }

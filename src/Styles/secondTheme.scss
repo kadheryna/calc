@@ -2,12 +2,12 @@
 	background: $secondBackground;
 
 	.toggle {
-		.active__toggle {
+		.activeToggle {
 			background: $secondCalcBackground;
 		}
 	}
 
-	.box__buttons {
+	.calculatorButtons {
 		background: $secondCalcBackground;
 
 		.clear,
@@ -34,18 +34,18 @@
 			border-bottom: 3px solid $secondToggleShadow;
 		}
 	}
-	.calc__box {
+	.calculatorBox {
 		background: $secondBackground;
 
-		.box__screen {
+		.calculatorScreen {
 			background: $secondScreenBackground;
 
-			.calculator__screen {
+			.calculatorButtons {
 				color: $secondNum;
 			}
-			.screen__result {
-				color: $secondNum;
-			}
+			// .screen__result {
+			// 	color: $secondNum;
+			// }
 		}
 	}
 

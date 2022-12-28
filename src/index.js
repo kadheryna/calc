@@ -1,6 +1,6 @@
 // Theme switching
 
-const toggleBtn = document.querySelectorAll(".active__toggle div");
+const toggleBtn = document.querySelectorAll(".activeToggle div");
 
 toggleBtn.forEach(theme => {
 	theme.addEventListener("click", () => {
@@ -20,32 +20,86 @@ toggleBtn.forEach(theme => {
 
 // Math
 
-const numberButtons = document.querySelectorAll(".number");
-const additionButton = document.querySelector(".addition");
-const subtractionButton = document.querySelector(".subtraction");
-const divisionButton = document.querySelector(".division");
-const multiplicationButton = document.querySelector(".multiplication");
-const equalSign = document.querySelector(".equal");
-const decimalButton = document.querySelector(".decimal");
+const currentResult = document.querySelector(".currentResult p");
+const previousResult = document.querySelector(".previousResult p");
+const numbersButtons = document.querySelectorAll(".number");
+const operatorsButtons = document.querySelectorAll(".operator");
 const deleteButton = document.querySelector(".delete");
-const clearButton = document.querySelector(".clear__all");
-const currentResult = document.querySelector(".current__result p");
-const previousResult = document.querySelector(".previous__result p");
+const clearButton = document.querySelector(".clear");
+const equalButton = document.querySelector(".equal");
 
 let result = "";
 
-equalSign.addEventListener("click", showResult);
-clearButton.addEventListener("click", clearScreen);
-numberButtons.forEach(button => {
-	button.addEventListener("click", displayNumbers);
-});
-deleteButton.addEventListener("click", clearAll);
+// Functions
 
 function displayNumbers() {
-	if (this.textContent == "." && currentResult.innerHTML.includes(".")) return;
-	if (this.textContent == "." && currentResult.innerHTML.includes("."))
-		return (currentResult.innerHTML = "0");
+	if (this.textContent === "." && currentResult.innerHTML.includes(".")) return;
+	if (this.textContent === "." && currentResult.innerHTML === "")
+		return (currentResult.innerHTML = "0.");
 
 	currentResult.innerHTML += this.textContent;
 }
 
+function operate() {
+	if (currentResult.innerHTML === "" && this.textContent === "-") {
+		currentResult.innerHTML = "-";
+		return;
+	} else if (currentResult.innerHTML === "") {
+		return;
+	}
+
+	if (operatorsButtons.innerHTML !== "") {
+		showResult();
+	}
+
+	previousResult.innerHTML = currentResult.innerHTML;
+	operatorsButtons.innerHTML = this.textContent;
+	currentResult.innerHTML = "";
+}
+
+function showResult() {
+	if (previousResult.innerHTML === "" || currentResult.innerHTML === "") return;
+
+	let a = Number(currentResult.innerHTML);
+	let b = Number(previousResult.innerHTML);
+	let operator = operatorsButtons.innerHTML;
+
+	switch (operator) {
+		case "+":
+			result = a + b;
+			break;
+		case "-":
+			result = b - a;
+			break;
+		case "X":
+			result = a * b;
+			break;
+		case "/":
+			result = b / a;
+			break;
+	}
+
+	previousResult.innerHTML = "";
+	currentResult.innerHTML = result;
+}
+
+function clear() {
+	result = "";
+	currentResult.innerHTML = "";
+	previousResult.innerHTML = "";
+	operatorsButtons.innerHTML = "";
+}
+
+function deleteNumber() {
+	currentResult.innerHTML = currentResult.innerHTML.slice(0, -1);
+}
+
+// Event Listeners
+
+operatorsButtons.forEach(button => button.addEventListener("click", operate));
+equalButton.addEventListener("click", showResult);
+clearButton.addEventListener("click", clear);
+numbersButtons.forEach(button =>
+	button.addEventListener("click", displayNumbers)
+);
+deleteButton.addEventListener("click", deleteNumber);

@@ -4,7 +4,7 @@ button {
 	border-radius: 8px;
 }
 
-.box__buttons {
+.calculatorButtons {
 	background: $firstCalcBackground;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -14,7 +14,7 @@ button {
 	grid-gap: 10px 20px;
 	padding: 30px 35px;
 	width: 30vw;
-	height: 50vh;
+	height: 52vh;
 
 	.delete,
 	.clear {
@@ -46,10 +46,10 @@ button {
 		height: 55px;
 	}
 
-	.calculator__screen {
-		grid-column-start: 1;
-		grid-column-end: 5;
-	}
+	// .calculatorScreen {
+	// 	grid-column-start: 1;
+	// 	grid-column-end: 5;
+	// }
 
 	.clear {
 		grid-column-start: 1;

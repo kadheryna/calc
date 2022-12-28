@@ -1,4 +1,4 @@
-.box__theme {
+.themeSwitch {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -10,20 +10,20 @@
 		gap: 15px;
 	}
 
-	.toggle__preference {
+	.preferenceToggle {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
-		.preference {
+		.themeVersion {
 			display: flex;
 			justify-content: space-evenly;
 			gap: 15px;
 			padding-bottom: 10px;
 		}
 
-		.active__toggle {
+		.activeToggle {
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;

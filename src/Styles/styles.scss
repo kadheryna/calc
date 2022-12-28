@@ -30,7 +30,7 @@ body {
 }
 
 @media screen and (max-device-width: 700px) {
-	.box__buttons {
+	.calculatorButtons {
 		width: 60vw;
 		height: 40vh;
 		padding: 25px;
@@ -45,18 +45,18 @@ body {
 		.multiplication,
 		.clear,
 		.equal {
-			height: 30px;
-			font-size: 15px;
+			height: 35px;
+			font-size: 25px;
 		}
 	}
-	.box__theme {
+	.themeSwitch {
 		h1 {
 			font-size: 23px;
 		}
 		h2, p {
 			font-size: 12px;
 		}
-		.active__toggle {
+		.activeToggle {
 			height: 10px;
 
 			.toggleButton1,
@@ -70,7 +70,7 @@ body {
 }
 
 @media screen and (min-device-width: 1440) {
-	.box__buttons {
+	.calculatorButtons {
 		width: 30vw;
 		height: 77vh;
 		grid-gap: 0 20px;

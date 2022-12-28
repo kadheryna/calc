@@ -2,17 +2,17 @@
 	background: $thirdBackground;
 
 	.toggle {
-		.active__toggle {
+		.activeToggle {
 			background: $thirdCalcBackground;
 		}
 	}
 
-	.box__buttons {
+	.calculatorButtons {
 		background: $thirdCalcBackground;
 
 		.clear,
 		.delete {
-			color: $thirdSigns;
+			color: $deleteButtons3;
 			background: $thirdDarkBackground;
 			border-bottom: 3px solid $thirdLightBackground;
 		}
@@ -24,7 +24,7 @@
 		.multiplication,
 		.decimal {
 			background: $thirdToggleShadow;
-			color: $thirdNum;
+			color: $numbersColor3;
 			border-bottom: 3px solid $thirdLightBackground;
 		}
 
@@ -34,19 +34,19 @@
 			border-bottom: 3px solid $thirdDarkActive;
 		}
 	}
-	.calc__box {
+	.calculatorBox {
 		background: $thirdBackground;
 
-		.box__screen {
+		.calculatorScreen {
 			background: $thirdCalcBackground;
 
-			.calculator__screen {
-				color: $thirdNum;
+			.calculatorButtons {
+				color: $numbersColor3;
 			}
 
-			.screen__result {
-				color: $thirdNum;
-			}
+			// .screen__result {
+			// 	color: $thirdNum;
+			// }
 		}
 	}
 
