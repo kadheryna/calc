@@ -5,9 +5,9 @@ button {
 }
 
 .calculatorButtons {
-	background: $firstCalcBackground;
+	background: $buttonsBackground1;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, auto);
 	justify-items: stretch;
 	align-items: center;
 	border-radius: 8px;
@@ -18,9 +18,9 @@ button {
 
 	.delete,
 	.clear {
-		color: $signs;
-		background: $firstDarkBackground;
-		border-bottom: 3px solid $firstDarkShadow;
+		color: $sign1;
+		background: $resetBackground1;
+		border-bottom: 3px solid $resetShadow1;
 		font-size: 30px;
 		height: 55px;
 	}
@@ -31,21 +31,20 @@ button {
 	.division,
 	.multiplication,
 	.decimal {
-		background: $firstLightBackground;
-		color: $num;
-		border-bottom: 3px solid $firstLightShadow;
+		background: $numbersBackground1;
+		color: $num1;
+		border-bottom: 3px solid $numbersShadow1;
 		font-size: 35px;
 		height: 55px;
 	}
 
 	.equal {
-		background: $firstToggleBackground;
-		color: $signs;
-		border-bottom: 3px solid $firstToggleShadow;
+		background: $equal1;
+		color: $sign1;
+		border-bottom: 3px solid $equalShadow1;
 		font-size: 30px;
 		height: 55px;
 	}
-
 
 	.clear {
 		grid-column-start: 1;
@@ -61,7 +60,7 @@ button {
 // Active
 
 .equal:active {
-	background: $firstToggleActive;
+	background: $equalActive1;
 }
 
 .number:active,
@@ -70,10 +69,10 @@ button {
 .division:active,
 .multiplication:active,
 .decimal:active {
-	background: $firstLightActive;
+	background: $numbersActive1;
 }
 
 .delete:active,
 .clear:active {
-	background: $firstDarkActive;
+	background: $resetActive1;
 }

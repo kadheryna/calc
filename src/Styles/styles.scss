@@ -9,7 +9,7 @@
 	font-family: "League Spartan", sans-serif;
 }
 body {
-	background: $firstBackground;
+	background: $bodyBackground1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -18,14 +18,14 @@ body {
 	h1 {
 		margin: 0;
 		font-size: 30px;
-		color: $signs;
+		color: $sign1;
 	}
 
 	h2,
 	p {
 		margin: 0;
 		font-size: 13px;
-		color: $signs;
+		color: $sign1;
 	}
 }
 
@@ -53,7 +53,8 @@ body {
 		h1 {
 			font-size: 23px;
 		}
-		h2, p {
+		h2,
+		p {
 			font-size: 12px;
 		}
 		.activeToggle {

@@ -1,12 +1,12 @@
 .calculatorBox {
-	background: $firstBackground;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
 
 	.calculatorScreen {
-		background: $firstScreenBackground;
+		overflow: auto;
+		background: $screenBackground1;
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
@@ -21,13 +21,18 @@
 			text-align: right;
 			background: none;
 			border: none;
-			color: $signs;
+			color: $result1;
+
 			p {
+				width: 30vw;
+				margin: auto;
+				overflow: scroll;
 				font-size: 50px;
 			}
 		}
 
 		.currentResult {
+			overflow: scroll;
 			padding-right: 20px;
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -35,8 +40,12 @@
 			background: none;
 			border: none;
 			font-size: 50px;
-			color: $signs;
+			color: $result1;
+
 			p {
+				width: 30vw;
+				margin: auto;
+				overflow: scroll;
 				font-size: 50px;
 			}
 		}

@@ -1,20 +1,20 @@
 .two {
-	background: $secondBackground;
+	background: $bodyBackground2;
 
 	.toggle {
 		.activeToggle {
-			background: $secondCalcBackground;
+			background: $buttonsBackground2;
 		}
 	}
 
 	.calculatorButtons {
-		background: $secondCalcBackground;
+		background: $buttonsBackground2;
 
 		.clear,
 		.delete {
-			color: $secondSigns;
-			background: $secondDarkBackground;
-			border-bottom: 3px solid $secondDarkShadow;
+			color: $sign2;
+			background: $resetBackground2;
+			border-bottom: 3px solid $resetShadow2;
 		}
 
 		.number,
@@ -23,34 +23,32 @@
 		.division,
 		.multiplication,
 		.decimal {
-			background: $secondLightBackground;
-			color: $secondNum;
-			border-bottom: 3px solid $secondLightShadow;
+			background: $numbersBackground2;
+			color: $num2;
+			border-bottom: 3px solid $numbersShadow2;
 		}
 
 		.equal {
-			background: $secondToggleBackground;
-			color: $secondSigns;
-			border-bottom: 3px solid $secondToggleShadow;
+			background: $equalBackground2;
+			color: $sign2;
+			border-bottom: 3px solid $equalShadow2;
 		}
 	}
 	.calculatorBox {
-		background: $secondBackground;
-
 		.calculatorScreen {
-			background: $secondScreenBackground;
+			background: $screenBackground2;
+			p {
+				color: $result2;
+			}
 
 			.calculatorButtons {
-				color: $secondNum;
+				color: $num2;
 			}
-			// .screen__result {
-			// 	color: $secondNum;
-			// }
 		}
 	}
 
 	.equal:active {
-		background: $secondToggleActive;
+		background: $equalActive2;
 	}
 
 	.number:active,
@@ -59,11 +57,11 @@
 	.division:active,
 	.multiplication:active,
 	.decimal:active {
-		background: $secondSigns;
+		background: $numbersActive2;
 	}
 
 	.delete:active,
 	.clear:active {
-		background: $secondDarkActive;
+		background: $resetActive2;
 	}
 }
