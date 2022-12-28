@@ -7,7 +7,7 @@ button {
 .calculatorButtons {
 	background: $firstCalcBackground;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(4, 1fr));
 	justify-items: stretch;
 	align-items: center;
 	border-radius: 8px;
@@ -45,11 +45,6 @@ button {
 		font-size: 30px;
 		height: 55px;
 	}
-
-	// .calculatorScreen {
-	// 	grid-column-start: 1;
-	// 	grid-column-end: 5;
-	// }
 
 	.clear {
 		grid-column-start: 1;
