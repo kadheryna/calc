@@ -1,20 +1,20 @@
 .three {
-	background: $thirdBackground;
+	background: $bodyBackground3;
 
 	.toggle {
 		.activeToggle {
-			background: $thirdCalcBackground;
+			background: $calcBackground3;
 		}
 	}
 
 	.calculatorButtons {
-		background: $thirdCalcBackground;
+		background: $calcBackground3;
 
 		.clear,
 		.delete {
-			color: $deleteButtons3;
-			background: $thirdDarkBackground;
-			border-bottom: 3px solid $thirdLightBackground;
+			color: $resetColor;
+			background: $resetBackground3;
+			border-bottom: 3px solid $resetShadow3;
 		}
 
 		.number,
@@ -23,35 +23,33 @@
 		.division,
 		.multiplication,
 		.decimal {
-			background: $thirdToggleShadow;
-			color: $numbersColor3;
-			border-bottom: 3px solid $thirdLightBackground;
+			background: $numbersBackground3;
+			color: $num3;
+			border-bottom: 3px solid $numbersShadow3;
 		}
 
 		.equal {
-			background: $thirdDarkShadow;
-			color: $thirdClear;
-			border-bottom: 3px solid $thirdDarkActive;
+			color: $num3;
+			background: $equalBackground3;
+			border-bottom: 3px solid $equalShadow3;
 		}
 	}
 	.calculatorBox {
-		background: $thirdBackground;
+		background: $bodyBackground3;
 
 		.calculatorScreen {
-			background: $thirdCalcBackground;
-
-			.calculatorButtons {
-				color: $numbersColor3;
+			background: $screenBackground3;
+			p {
+				color: $num3;
 			}
-
-			// .screen__result {
-			// 	color: $thirdNum;
-			// }
+			.calculatorButtons {
+				color: $num3;
+			}
 		}
 	}
 
 	.equal:active {
-		background: $thirdDarkActive;
+		background: $equalActive3;
 	}
 
 	.number:active,
@@ -60,11 +58,11 @@
 	.division:active,
 	.multiplication:active,
 	.decimal:active {
-		background: $thirdLightActive;
+		background: $numbersActive3;
 	}
 
 	.delete:active,
 	.clear:active {
-		background: $thirdToggleActive;
+		background: $resetActive3;
 	}
 }

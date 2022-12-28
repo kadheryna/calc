@@ -27,28 +27,28 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-evenly;
-			background: $firstScreenBackground;
+			background: $screenBackground1;
 			width: 65px;
 			height: 15px;
 			border-radius: 15px;
 			padding: 5px;
 		}
 		.toggleButton1 {
-			background-color: $firstToggleBackground;
+			background-color: $toggle1;
 			transition: all 0.4s ease-in-out;
 			border-radius: 50%;
 			width: 20px;
 			height: 20px;
 		}
 		.toggleButton2 {
-			background-color: $firstToggleShadow;
+			background-color: $toggle2;
 			transition: all 0.4s ease-in-out;
 			border-radius: 50%;
 			width: 20px;
 			height: 20px;
 		}
 		.toggleButton3 {
-			background-color: $thirdToggleBackground;
+			background-color: $toggle3;
 			transition: all 0.4s ease-in-out;
 			border-radius: 50%;
 			width: 20px;
