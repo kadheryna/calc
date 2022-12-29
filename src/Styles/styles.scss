@@ -30,41 +30,44 @@ body {
 }
 
 @media screen and (max-device-width: 700px) {
-	.calculatorButtons {
-		width: 70vw;
-		height: 38vh;
-		padding: 25px;
-		grid-gap: 0 15px;
+	.calculatorBox {
+		width: 90vw;
 
-		.number,
-		.delete,
-		.addition,
-		.subtraction,
-		.decimal,
-		.division,
-		.multiplication,
-		.clear,
-		.equal {
-			height: 35px;
-			font-size: 25px;
-		}
-	}
-	.themeSwitch {
-		h1 {
-			font-size: 23px;
-		}
-		h2,
-		p {
-			font-size: 12px;
-		}
-		.activeToggle {
-			height: 10px;
+		.calculatorButtons {
+			height: 33vh;
+			padding: 20px;
+			grid-gap: 0 15px;
 
-			.toggleButton1,
-			.toggleButton2,
-			.toggleButton3 {
-				width: 15px;
-				height: 15px;
+			.number,
+			.delete,
+			.addition,
+			.subtraction,
+			.decimal,
+			.division,
+			.multiplication,
+			.clear,
+			.equal {
+				height: 35px;
+				font-size: 20px;
+			}
+		}
+		.themeSwitch {
+			h1 {
+				font-size: 20px;
+			}
+			h2,
+			p {
+				font-size: 10px;
+			}
+			.activeToggle {
+				height: 10px;
+
+				.toggleButton1,
+				.toggleButton2,
+				.toggleButton3 {
+					width: 15px;
+					height: 15px;
+				}
 			}
 		}
 	}

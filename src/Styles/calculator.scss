@@ -1,8 +1,9 @@
 .calculatorBox {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-content: center;
 	flex-direction: column;
+	width: 40vw;
 
 	.calculatorScreen {
 		overflow: auto;
@@ -24,15 +25,15 @@
 			color: $result1;
 
 			p {
-				width: 30vw;
-				margin: auto;
-				overflow: scroll;
 				font-size: 50px;
 			}
 		}
 
+		.mathSign {
+			font-size: 20px;
+		}
+
 		.currentResult {
-			overflow: scroll;
 			padding-right: 20px;
 			padding-top: 10px;
 			padding-bottom: 10px;
@@ -43,9 +44,6 @@
 			color: $result1;
 
 			p {
-				width: 30vw;
-				margin: auto;
-				overflow: scroll;
 				font-size: 50px;
 			}
 		}

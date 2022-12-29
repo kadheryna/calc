@@ -27,6 +27,7 @@ const operatorsButtons = document.querySelectorAll(".operator");
 const deleteButton = document.querySelector(".delete");
 const clearButton = document.querySelector(".clear");
 const equalButton = document.querySelector(".equal");
+const mathSign = document.querySelector(".mathSign");
 
 let result = "";
 
@@ -48,12 +49,12 @@ function operate() {
 		return;
 	}
 
-	if (operatorsButtons.innerHTML !== "") {
+	if (mathSign.innerHTML !== "") {
 		showResult();
 	}
 
 	previousResult.innerHTML = currentResult.innerHTML;
-	operatorsButtons.innerHTML = this.textContent;
+	mathSign.innerHTML = this.textContent;
 	currentResult.innerHTML = "";
 }
 
@@ -62,7 +63,7 @@ function showResult() {
 
 	let a = Number(currentResult.innerHTML);
 	let b = Number(previousResult.innerHTML);
-	let operator = operatorsButtons.innerHTML;
+	let operator = mathSign.innerHTML;
 
 	switch (operator) {
 		case "+":
@@ -71,7 +72,7 @@ function showResult() {
 		case "-":
 			result = b - a;
 			break;
-		case "X":
+		case "x":
 			result = a * b;
 			break;
 		case "/":
@@ -79,8 +80,9 @@ function showResult() {
 			break;
 	}
 
-	previousResult.innerHTML = "";
 	currentResult.innerHTML = result;
+	previousResult.innerHTML = "";
+	mathSign.innerHTML = "";
 }
 
 function clear() {
