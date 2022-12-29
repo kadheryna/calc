@@ -31,11 +31,7 @@ button {
 	}
 
 	.number,
-	.addition,
-	.subtraction,
-	.division,
-	.multiplication,
-	.decimal {
+	.operator{
 		background: $numbersBackground1;
 		color: $num1;
 		border-bottom: 3px solid $numbersShadow1;
@@ -60,11 +56,7 @@ button {
 }
 
 .number:active,
-.addition:active,
-.subtraction:active,
-.division:active,
-.multiplication:active,
-.decimal:active {
+.operator:active {
 	background: $numbersActive1;
 }
 
