@@ -9,42 +9,46 @@
 		overflow: auto;
 		background: $screenBackground1;
 		display: flex;
+		flex-direction: row;
 		justify-content: flex-end;
-		flex-direction: column;
 		height: 20vh;
 		border: none;
 		border-radius: 5px;
 		margin-bottom: 25px;
+		padding: 10px 20px 10px 0;
 
 		.previousResult {
-			padding-top: 10px;
-			padding-right: 20px;
+			display: flex;
+			align-items: flex-end;
 			text-align: right;
 			background: none;
 			border: none;
 			color: $result1;
 
 			p {
-				font-size: 50px;
+				font-size: 55px;
 			}
 		}
 
 		.mathSign {
-			font-size: 20px;
+			display: flex;
+			align-items: flex-end;
+			color: $result1;
+			font-size: 30px;
+			padding: 0 10px 20px 10px;
 		}
 
 		.currentResult {
-			padding-right: 20px;
-			padding-top: 10px;
-			padding-bottom: 10px;
+			display: flex;
+			align-items: flex-end;
 			text-align: right;
 			background: none;
 			border: none;
-			font-size: 50px;
+			font-size: 55px;
 			color: $result1;
 
 			p {
-				font-size: 50px;
+				font-size: 55px;
 			}
 		}
 	}
